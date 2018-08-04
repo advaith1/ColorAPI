@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+## Welcome to ColorAPI!
+ColorAPI shows a square image for any hex code provided.
 
-You can use the [editor on GitHub](https://github.com/advaith1/ColorAPI/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Supported File Types
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- svg
+- webp
+- png
+- jpeg/jpg
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+## Using ColorAPI
+ColorAPI uses the following URL structure:
+```
+https://colorapi.glitch.me/HEXCODE.FILETYPE
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+For example:
+```
+https://colorapi.glitch.me/fff.webp
+```
 
-### Jekyll Themes
+## How it works
+ColorAPI takes the provided hex code and inserts it into SVG code, then if necessary, converts it to an image file using [svg-to-img](https://npmjs.org/package/svg-to-img). ColorAPI is powered by [express](https://expressjs.com).
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/advaith1/ColorAPI/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+---
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+ColorAPI was created by [advaith](https://advaith.fun) originally for use in [BeepBot](https://beepsite.glitch.me) and was inspired by [color.dyno.gg](https://color.dyno.gg/color/fff/256x256.png).
