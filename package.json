@@ -1,0 +1,18 @@
+{
+  "name": "colorapi",
+  "description": "get an image for any color",
+  "main": "api.js",
+  "scripts": {
+    "start": "node api.js"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "svg-to-img": "^2.0.7"
+  },
+  "engines": {
+    "node": "10.x"
+  },
+  "repository": {
+    "url": "https://github.com/advaith1/ColorAPI"
+  }
+}
